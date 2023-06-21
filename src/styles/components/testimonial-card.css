@@ -1,0 +1,49 @@
+.testimonial-card {
+    color: var(--black-color);
+    font-size: 1.6rem;
+    padding: 3.2rem;
+    border-radius: 10px;
+    background: var(--off-white-color);
+}
+
+.testimonial-card .client-review img {
+    max-width: 4vw;
+}
+
+.testimonial-card .client-review p {
+    padding-left: .4rem;
+}
+
+.testimonial-card .client-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+/* Size of Photos should be around 116 * 116
+   and should be in circular form. Figma was used
+   to edit the photos used. Other programs can be
+   used too */
+.testimonial-card .client-photo {
+    max-width: 40%;
+}
+
+.testimonial-card .client-name {
+    font-size: 1.2rem;
+}
+
+.testimonial-card + .testimonial-card {
+    margin-top: 1.6rem;
+}
+
+@media screen and (min-width: 769px) {
+  .testimonial-card .client-review img {
+    max-width: 1vw;
+  }
+
+  .testimonial-card .client-review p {
+    padding-left: .4rem;
+    font-size: 2rem;
+  }
+}

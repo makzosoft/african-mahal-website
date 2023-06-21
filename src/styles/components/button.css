@@ -1,0 +1,54 @@
+.btn {
+  font-family: 'Metrophobic', sans-serif;
+  font-size: 1.6rem;
+  padding: 1.6rem 2rem;
+  border-radius: 8px;
+  transition: background .3s;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn-primary {
+  color: var(--off-white-color);
+  background: var(--primary-color);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background: var(--dark-green-color);
+}
+
+.btn-secondary {
+  color: var(--white-color);
+  background: var(--secondary-color);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background: var(--black-color);
+}
+
+.btn-with-icon,
+.btn-with-icon-alt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Works for only buttons with icons at the left and
+text at the right */
+.btn-with-icon > *:first-child {
+  margin-right: 1.2rem;
+  font-size: 2.4rem;
+}
+
+/* Works for only buttons with text at the left and
+icons at the right */
+.btn-with-icon-alt > *:last-child {
+  margin-left: 1.2rem;
+  font-size: 2.4rem;
+}

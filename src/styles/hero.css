@@ -1,0 +1,216 @@
+.hero {
+	position: relative;
+	color: #f8f8f8;
+	height: 65vh;
+	background: #2e2e2e;
+	background: url("../assets/images/african-mahal-cars.png") center/cover;
+	background-repeat: no-repeat;
+	animation: fadeIn 12s ease-out infinite;
+	-webkit-animation: fadeIn 9s ease-out infinite;
+	animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+	animation-fill-mode: backwards;
+	-webkit-animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		background: url("../assets/images/african-mahal-cars.png") center/cover;
+		background-repeat: no-repeat;
+	}
+	33% {
+		background: url("../assets/images/african-mahal-engines.png") center/cover;
+		background-repeat: no-repeat;
+	}
+	66% {
+		background: url("../assets/images/african-mahal-furniture.png") center/cover;
+		background-repeat: no-repeat;
+	}
+	100% {
+		background: url("../assets/images/african-mahal-cars.png") center/cover;
+		background-repeat: no-repeat;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		background: url("../assets/images/african-mahal-cars.png") center/cover;
+		background-repeat: no-repeat;
+	}
+	33% {
+		background: url("../assets/images/african-mahal-engines.png") center/cover;
+		background-repeat: no-repeat;
+	}
+	66% {
+		background: url("../assets/images/african-mahal-furniture.png") center/cover;
+		background-repeat: no-repeat;
+	}
+	100% {
+		background: url("../assets/images/african-mahal-cars.png") center/cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 3.2rem 2.4rem;
+}
+
+.hero-content > * + * {
+	margin-top: 1.6rem;
+}
+
+.hero-text-heading {
+	font-family: "Teko", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3.6rem;
+	line-height: 3.6rem;
+	text-align: center;
+}
+
+.hero-text-subheading {
+	font-family: "Metrophobic" sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	text-align: center;
+	opacity: 0.7;
+}
+
+.hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		270deg,
+		rgba(255, 255, 255, 0) 0.01%,
+		rgba(41, 41, 41, 0.619792) 60.42%,
+		#000000 100%
+	);
+}
+
+.hero .btn {
+	font-size: inherit;
+	width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+	.hero {
+		margin: 0;
+		height: 70vh;
+		background: url("../assets/images/african-mahal-cars@desktop.png")
+			center/cover;
+		background-repeat: no-repeat;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			background: url("../assets/images/african-mahal-cars@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+		33% {
+			background: url("../assets/images/african-mahal-engines@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+		66% {
+			background: url("../assets/images/african-mahal-furniture@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+		100% {
+			background: url("../assets/images/african-mahal-cars@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+	}
+
+	@-webkit-keyframes fadeIn {
+		0% {
+			background: url("../assets/images/african-mahal-cars@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+		33% {
+			background: url("../assets/images/african-mahal-engines@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+		66% {
+			background: url("../assets/images/african-mahal-furniture@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+		100% {
+			background: url("../assets/images/african-mahal-cars@desktop.png")
+				center/cover;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.hero-content {
+		max-width: 80vw;
+	}
+
+	.hero-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			270deg,
+			rgba(255, 255, 255, 0) 0.01%,
+			rgba(41, 41, 41, 0.619792) 60.42%,
+			#000000 100%
+		);
+	}
+
+	.hero-text-heading {
+		font-size: 5.6rem;
+		line-height: 5.6rem;
+		text-align: left;
+	}
+
+	.hero-text-subheading {
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		text-align: left;
+		width: 60%;
+	}
+
+	.hero .btn {
+		font-size: 2rem;
+		min-width: max-content;
+		max-width: 60%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.hero-content {
+		max-width: 70vw;
+	}
+
+	.hero-text-subheading {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.hero-content {
+		max-width: 60vw;
+	}
+}

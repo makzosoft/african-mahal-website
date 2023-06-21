@@ -1,0 +1,88 @@
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000000000;
+	background: hsla(0, 0%, 0%, 0.8);
+}
+
+.modal-box {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 85vw;
+	z-index: 1000000000000;
+	border-radius: 8px;
+	transform: translate(-50%, -50%);
+	background: var(--light-green-color);
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modal-box > * {
+	padding: 3rem;
+}
+
+.modal-header {
+	display: flex;
+	align-items: center;
+	font-size: 3.2rem;
+	font-family: "Teko", sans-serif;
+}
+
+.modal-header-btn-group {
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+}
+
+.modal-header-btn-group > * + * {
+	margin-left: 2rem;
+}
+
+.modal-header-btn-group .btn {
+	display: inline;
+	padding: 1rem 2rem;
+}
+
+.modal-body {
+	padding-top: 0;
+	padding-bottom: 3rem;
+}
+
+.modal-body .form {
+	color: var(--black-color);
+}
+
+.modal-body .form-field-input {
+	color: var(--black-color);
+	border-color: hsla(0, 0%, 0%, 0.7);
+	opacity: 0.9;
+}
+
+.modal-body .form-field-input::placeholder {
+	color: #000000;
+}
+
+.modal-body .form .btn {
+	color: var(--white-color);
+}
+
+@media screen and (min-width: 480px) {
+	.modal-box {
+		min-width: 70vw;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.modal-box {
+		min-width: 60vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.modal-box {
+		min-width: 40vw;
+	}
+}

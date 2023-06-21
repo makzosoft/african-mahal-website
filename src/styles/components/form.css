@@ -1,0 +1,46 @@
+.form > * + * {
+    margin-top: 2rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field > * + * {
+    margin-top: .4rem;
+}
+
+.form-field-label {
+    font-size: 2rem;
+}
+
+.form-field-input {
+    color: var(--white-color);
+    padding: .8rem 0;
+    opacity: .8;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .8);
+    background: transparent;
+}
+
+.form-field-input::placeholder {
+    opacity: .4;
+}
+
+.form-field:not(:first-child) {
+    margin-top: 1.6rem;
+}
+
+.form .btn {
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .form > * + * {
+        margin-top: 4rem;
+    }
+
+    .form .btn {
+        font-size: 2rem;
+    }
+}

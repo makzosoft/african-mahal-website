@@ -1,0 +1,52 @@
+.tooltip {
+	position: relative;
+}
+
+.tooltip .tooltip-text {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 10%;
+	background-color: hsl(359, 76%, 80%);
+	color: hsl(359, 76%, 35%);
+	font-weight: 500;
+	font-size: 1.4rem;
+	text-align: center;
+	border-radius: 6px;
+	padding: 0.8rem 1.2rem;
+	opacity: 0;
+	animation: fade 1s ease-out forwards;
+}
+
+.tooltip .tooltip-text::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -0.5rem;
+	border-width: 0.5rem;
+	border-style: solid;
+	border-color: transparent transparent hsl(359, 76%, 80%) transparent;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+		bottom: -3rem;
+	}
+	to {
+		opacity: 1;
+		bottom: -5rem;
+	}
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0;
+		bottom: -3rem;
+	}
+	to {
+		opacity: 1;
+		bottom: -5rem;
+	}
+}
