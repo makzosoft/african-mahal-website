@@ -1,5 +1,4 @@
 // Function to toggle navbar position style
-// And to animate UI on scroll
 // for screens above 768px
 window.addEventListener("DOMContentLoaded", () => {
 	if (window.innerWidth > 768) {
@@ -18,16 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 				const scrollHeight = window.scrollY;
 
 				toggleNavbarPositionStyle(navbarElement, scrollHeight);
-			});
-
-			// Initialize animation
-			if (AOS) {
-				AOS.init({
-					duration: 1000,
-					easing: "ease-in-sine",
-					delay: 100,
-				});
-			}
+			})
 		}, 5000);
 	}
 });

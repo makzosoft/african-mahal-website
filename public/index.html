@@ -114,6 +114,15 @@
 			function googleTranslateElementInit() {
 				new google.translate.TranslateElement({ pageLanguage: "en" }, "root");
 			}
+
+			// Initialize animation
+			if (AOS) {
+				AOS.init({
+					duration: 1000,
+					easing: "ease-in-sine",
+					delay: 100,
+				});
+			}
 		</script>
 		<script defer src="main.js"></script>
 	</body>

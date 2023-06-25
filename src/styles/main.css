@@ -135,7 +135,6 @@ body {
 	z-index: 100;
 	bottom: 1rem;
 	right: 1rem;
-	max-width: 100px;
 	padding: 1.2rem;
 	border-radius: 6px;
 	background: var(--white-color);

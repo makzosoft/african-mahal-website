@@ -9,8 +9,6 @@ import AboutSection from "./AboutSection";
 import AdvertSection from "./AdvertSection";
 
 const MainContent = () => {
-	const [openModal, setOpenModal] = useState(false);
-
 	return (
 		<main className="main">
 			<HeroSection />
