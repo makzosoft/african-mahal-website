@@ -6,7 +6,6 @@ const StorySection = () => {
 			className="story-section section"
 			data-aos="fade-up"
 			data-aos-once="true"
-			id="about"
 		>
 			<h2 className="section-header">Our Heritage</h2>
 			<p className="section-content">

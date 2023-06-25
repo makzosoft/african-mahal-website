@@ -3,6 +3,7 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <section className="about-section section"
+    id="about"
     data-aos="zoom-in"
     data-aos-duration="1000"
     data-aos-once="true">
